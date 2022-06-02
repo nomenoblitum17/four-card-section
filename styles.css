@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: hsl(0, 0%, 98%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: 2fr 5fr;
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section1 h2, .section1 h2 b {
+    text-align: center;
+    line-height: 1.4;
+    font-size: 24px;
+    font-weight: 100;
+    color:  hsl(234, 12%, 34%);
+}
+
+.section1 h2 b {
+    font-weight: 600;
+}
+
+.section1 p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.4;
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+}
+
+.section2, .section4 {
+    width: 33.3%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.section3 {
+    width: 33.3%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    padding: 8%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+.card p {
+    margin-bottom: 12%;
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+}
+
+img {
+    width: 50px;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.line {
+    height: 47%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;   
+    box-shadow: 0 0 15px #ddd;
+}
+
+.c1 {
+    border: 3px solid #fff;
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.c2 {
+    border: 3px solid #fff;
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.c3 {
+    border: 3px solid #fff;
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.c4 {
+    border: 3px solid #fff;
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width: 750px) {
+
+    .grid-container {
+        grid-template-rows: 1fr 4fr;
+        width: 90%;
+    }
+
+    .section1 p {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section2, .section3, .section4 {
+        min-width: 100%;
+    }
+
+    .section3 {
+        margin: 5% 0;
+    }
+
+    .c1, .c4 {
+        height: 100%;
+    }
+
+    .section2 .line, .section4 .line {
+       width: 100%;
+       height: 100%;
+    }
+}
